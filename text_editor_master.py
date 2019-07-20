@@ -1,32 +1,16 @@
 #################################################
-# Hw3
-# Your andrewID:mingruiy
-# Your section: o
 #################################################
 
-import cs112_f18_week3_linter
 import string
 
 #################################################
-# Hw3 problems
 #################################################
 
-### #1: Reasoning over Code ####
+
 
 def rocAnswer():
     return "DAC\nBGk\tl"
 
-#### #2: Fix the Style ####
-
-"""
-List your style fixes here:
-1: No comment on any of the line of the function
-2: Didn't use meaningful variable names. "for str in s1" should be "for character in s1"
-3: Didn't use consistent whitespace throughout his code. Such as  count_matches_1= 0
-count_matches_2 = 0
-4: Didn't write any test cases
-5: Used too many if statement but not an elif
-"""
 
 def areAnagrams(s1, s2):
     if len(s1) != len(s2):
@@ -47,7 +31,6 @@ def areAnagrams(s1, s2):
                 return False
         return True
 
-#### #3: Code Writing: applyCaesarCipher ####
 
 def applyCaesarCipher(message, shiftNum):
     word = message
@@ -66,9 +49,6 @@ def applyCaesarCipher(message, shiftNum):
             newWord = newWord + letter
     return newWord
 
-#### #4: COLLABORATIVE Code Writing: gradebookSummary ####
-
-# Collaborators: [List here]
 
 def readFile(path):
     with open(path, "rt") as f:
@@ -108,9 +88,6 @@ def gradebookSummary(gradebookFilename):
     return empty 
                 
 print(gradebookSummary("hw3_files/small2.txt"))
-            
-
-#### #5: Code Writing: patternedMessage ####
 
 def patternedMessage(message, pattern):
     newdrawing = ""
@@ -124,12 +101,9 @@ def patternedMessage(message, pattern):
             newdrawing = newdrawing + i
     return newdrawing
 
-#### #6: COLLABORATIVE Top-Down Design: mostFrequentLetters ####
-
-# Collaborators: [List here]
 
 
-def greatestLetter(s): #find the letter that occured the most in the string
+def greatestLetter(s):
     max = 0
     value = ""
     for character in s:
@@ -163,8 +137,6 @@ def mostFrequentLetters(s):
         hopeString = hopeString.replace(greatestLetter(hopeString),"")
     return newString
 
-                
-#### #7: Top-Down Design: longestCommonSubstring ####
 def longestCommonSubstring(first, second):
     m = []
     for j in range(len(first) + 1):
@@ -185,18 +157,8 @@ def longestCommonSubstring(first, second):
 
     return first[end - max_length:end] 
 
-#### #8: Top-Down Design: justifyText ####
-
-
-#### Bonus: getEvalSteps ####
-
 def getEvalSteps(expr):
     return
-
-################################################
-# Hw3 Test Functions
-# ignore_rest
-################################################
 
 import string
 def roc(s):
