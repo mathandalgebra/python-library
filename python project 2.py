@@ -1,10 +1,4 @@
-#################################################
-# Hw2
-# Your andrewID:
-# Your section: 
-#################################################
 
-import cs112_f18_week2_linter
 import math
 
 def isPrime(n):
@@ -15,19 +9,6 @@ def isPrime(n):
             return False
     return True
 
-#################################################
-# Hw2 problems
-#################################################
-
-
-### Part 1: Group sessions [10pts]
-# Attendance will be graded by the TAs! Nothing needed here!
-
-### Part 2: Piazza post [5pts]
-# Participation will be graded by the TAs! Nothing needed here!
-
-### Part 3: Debugging code [10pts]
-# NOTE: remove the triple-quotes before you start debugging. ###
 
 def countEvenDigits(n):
     if n < 0:
@@ -89,9 +70,6 @@ def testIsEquidigital(isEquidigital):
     assert(isEquidigital(0) == False)
     assert(isEquidigital(2) == False)
     assert(isEquidigital(2.25) == False)
-        
-    
-### Part 5: Code writing: Happy Primes ^____^ [15pts]
 
 def sumOfSquaresOfDigits(n):
     number  =0
@@ -127,8 +105,6 @@ def nthHappyPrime(n):
             counting += 1
     return guess
 
-###Part 6: Code writing: Number triangles [5pts]
-
 def printNumberTriangle(n):
     count = 0
     number = 0
@@ -138,8 +114,6 @@ def printNumberTriangle(n):
         print(number)        
 
 
-###Part 7: COLLABORATIVE Code writing: Two player eggs game [10pts]
-#Collaborators: [List here]
 def twoPlayerEggsGame():
     print("Let's play the egg game! There are 21 eggs left.")
     
@@ -181,16 +155,6 @@ def twoPlayerEggsGame():
             else:
                 print("Each player must take either 1, 2, or 3 eggs!")
                 turn = 2
-           
-            
-    
-    
-###Part 8: COLLABORATIVE Code writing: One player eggs game [10pts]
-#NOTE:  If you get an EOF error when testing, it probably means
-#       that your code is calling input() but the test case has 
-#       already provided its entire input string!  In other
-#       words, the test expects the game to be over, but your code
-#       is asking for more moves.  
 
 def eggBot(n):
     if(n == 3):
@@ -238,8 +202,6 @@ def onePlayerEggsGame():
             else:
                 print("There are",player1,"eggs left.")
             
-    
-###Part 9: COLLABORATIVE Code writing: nth Kaprekar number [15pts]
 def countDigit(n):
     count = 0
     while(n > 0):
@@ -269,7 +231,7 @@ def nthKaprekarNumber(k):
             count += 1
     return value
 
-###Part 10: Code writing: Nearest Kaprekar number [15pts]
+
 def roundHalfUp(n):
     x = n * 10 % 10
     if(x >= 5):
@@ -299,7 +261,7 @@ def nearestKaprekarNumber(n):
         if(isKaprekarNumber(b) == True):
             return b
     
-###OPTIONAL BONUS: Fun with Generators[3pts; 1pt each]
+
 
 def squaresGenerator():
     return
@@ -310,10 +272,6 @@ def nswGenerator():
 def nswPrimesGenerator():
     return
 
-#################################################
-# Hw2 Test Functions
-# ignore_rest
-#################################################
     
 def testCountEvenDigits():
     print("Testing countEvenDigits()...", end="")
@@ -728,9 +686,6 @@ def testNswPrimesGenerator():
           )
     print("Passed!")
 
-#################################################
-# Hw2 Main
-#################################################
 
 def testAll():
     # testCountEvenDigits()
