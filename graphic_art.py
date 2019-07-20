@@ -5,23 +5,6 @@ import string
 import copy
 
 
-"""
-Fill in your answers to the List Function Table problem here.
-
-c = a + b non-destructive
-a += b    destructive
-a.append(x) destructive
-a.insert(0, x)  destructive
-b = a[:i] + [x] + a[i:]  non-destructive
-a.remove(x)  destructive
-a.pop(0)     destructive
-b = a * 3    destructive
-a.reverse()  destructive
-reversed(a)  non-destructive
-a.sort()    destructive
-sorted(a)   non-destructive
-copy.copy(a) non-destructive
-"""
 
 def lookAndSay(list):
     count = 1
