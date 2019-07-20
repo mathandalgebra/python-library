@@ -280,7 +280,7 @@ def testBonusFindIntRootsOfCubic():
     print("Passed.")
 
 #################################################
-# Hw1 Main
+
 #################################################
 
 def testAll():
