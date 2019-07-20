@@ -102,7 +102,7 @@ def runSimpleProgram(program, args):
 
 from tkinter import *
 
-
+#a start in tkinter
 
 def drawStar(centerX, centerY, diameter, numPoints, color, 
                    winWidth=500, winHeight=500):
