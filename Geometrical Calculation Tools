@@ -1,5 +1,4 @@
 
-import cs112_f18_week1_linter
 import math
 
 
@@ -81,10 +80,7 @@ def colorBlender(rgb1, rgb2, midpoints, n):
 def bonusFindIntRootsOfCubic(a, b, c, d):
     return
 
-#################################################
-# Hw1 Test Functions
-# ignore_rest
-#################################################
+
 
 def testSyllabusAnswer():
     print("Your answer to the syllabus question is:")
